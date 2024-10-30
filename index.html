@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPestPal</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #eef2f3;
+            color: #333;
+        }
+        header {
+            background: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin: 0 auto;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        section {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .intro {
+            background: #264653;
+            color: white;
+            padding: 4rem 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #e76f51;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            margin-top: 1rem;
+        }
+        .services, .about, .faq, .testimonials, .contact {
+            background: white;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services ul li {
+            margin-bottom: 1rem;
+        }
+        .faq dt {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .faq dd {
+            margin: 0 0 1rem 0;
+        }
+        .testimonial {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+            background: #f7f7f7;
+        }
+        footer {
+            background: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        .disclaimer {
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="MyPestPal Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="policy.html">Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="intro">
+            <h1>Welcome to MyPestPal</h1>
+            <p>Providing eco-friendly pest control services to ensure a safe and healthy environment for your home and business.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>At MyPestPal, we specialize in using environmentally safe methods to eliminate pests. Our experienced team is dedicated to providing top-notch services tailored to meet your specific needs.</p>
+            <p>We prioritize sustainability and safety, ensuring that our practices are effective yet harmless to your family and pets.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Residential Pest Control</li>
+                <li>Commercial Pest Control</li>
+                <li>Rodent Extermination</li>
+                <li>Termite Inspections</li>
+                <li>Bed Bug Treatments</li>
+                <li>Ant and Spider Management</li>
+                <li>Flea and Tick Removal</li>
+            </ul>
+        </section>
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+                <dt>How do I book a service?</dt>
+                <dd>You can book a service by calling us or filling out the form on our <a href="#contact">contact page</a>.</dd>
+                <dt>Are your pest control methods safe?</dt>
+                <dd>Yes, our methods are environmentally friendly and safe for both humans and pets.</dd>
+                <dt>What types of pests do you handle?</dt>
+                <dd>We handle a wide variety of pests including rodents, termites, bed bugs, ants, spiders, fleas, and ticks.</dd>
+            </dl>
+        </section>
+        <section id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"MyPestPal provided exceptional service. Our pest issue was resolved quickly and efficiently!" - Sarah K.</p>
+            </div>
+            <div class="testimonial">
+                <p>"Highly professional team. They explained everything clearly and their methods were safe for our pets." - Michael L.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or to schedule a service</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> MyPestPal. All rights reserved.</p>
+        <p class="disclaimer">Disclaimer: Our services are subject to the terms and conditions outlined in our service agreement. Please read our <a href="terms.html" style="color: #f4a261;">Terms & Conditions</a> and <a href="policy.html" style="color: #f4a261;">Privacy Policy</a> for more information.</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698886939"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16698886939');
+</script>
+</body>
+</html>
